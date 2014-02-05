@@ -1,0 +1,12 @@
+{
+    "name": "stephendavis89/mayaisthebomb",
+    "require": {
+        "slim/slim": "2.*"
+    },
+    "authors": [
+        {
+            "name": "Stephen Davis",
+            "email": "stephendavis89@gmail.com"
+        }
+    ]
+}
