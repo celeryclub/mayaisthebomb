@@ -1,7 +1,8 @@
 {
     "name": "stephendavis89/mayaisthebomb",
     "require": {
-        "slim/slim": "2.*"
+        "slim/slim": "2.*",
+        "j4mie/paris": "1.4.*"
     },
     "authors": [
         {
