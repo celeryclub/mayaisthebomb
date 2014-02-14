@@ -1,5 +1,5 @@
 <?php
 
 $app->get('/', function() {
-    echo 'Hello world.';
+    echo 'Database connection string: '.ORM::get_config('connection_string');
 });
