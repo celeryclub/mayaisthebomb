@@ -2,7 +2,12 @@
     "name": "stephendavis89/mayaisthebomb",
     "require": {
         "slim/slim": "2.*",
-        "j4mie/paris": "1.4.*"
+        "j4mie/paris": "1.4.*",
+        "pimple/pimple": "2.0.*@dev",
+        "davedevelopment/phpmig": "1.1.*@dev"
+    },
+    "config": {
+        "bin-dir": "bin"
     },
     "authors": [
         {

@@ -6,7 +6,7 @@ You should already have MySQL and PHP 5.4+ installed. If necessary, you can inst
 
 ## Development setup
 
-To set up a local MySQL user and database, run:
+To set up a local MySQL user and database:
 
 ```sh
 mysql -uroot -e "CREATE DATABASE mayaisthebomb;"
@@ -15,10 +15,18 @@ mysql -uroot -e "GRANT ALL PRIVILEGES ON mayaisthebomb . * TO 'mayaisthebomb'@'l
 
 ## Development server
 
-To start a development server from the project directory, run:
+To start a development server from the project directory:
 
 ```sh
 php -S localhost:9000 -t public/ server.php
+```
+
+## Migrations
+
+To run database migrations from the project directory:
+
+```sh
+bin/phpmig migrate
 ```
 
 ## Production setup
