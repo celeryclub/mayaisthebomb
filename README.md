@@ -15,10 +15,10 @@ mysql -uroot -e "GRANT ALL PRIVILEGES ON mayaisthebomb . * TO 'mayaisthebomb'@'l
 
 ## Development server
 
-To start a development server from the project directory:
+To start a development server on port 9000 from the project directory:
 
 ```sh
-php -S localhost:9000 -t public/ server.php
+bin/phake server
 ```
 
 ## Migrations
