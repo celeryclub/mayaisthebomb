@@ -194,12 +194,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Pimple.git",
-                "reference": "f99b3df12991c22463927aa6a18fd9b2212917f2"
+                "reference": "30651c5b19e1ec24e26d33c1600fc09ea3802f7a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Pimple/zipball/f99b3df12991c22463927aa6a18fd9b2212917f2",
-                "reference": "f99b3df12991c22463927aa6a18fd9b2212917f2",
+                "url": "https://api.github.com/repos/fabpot/Pimple/zipball/30651c5b19e1ec24e26d33c1600fc09ea3802f7a",
+                "reference": "30651c5b19e1ec24e26d33c1600fc09ea3802f7a",
                 "shasum": ""
             },
             "require": {
@@ -234,20 +234,20 @@
                 "container",
                 "dependency injection"
             ],
-            "time": "2014-02-10 08:05:32"
+            "time": "2014-02-11 08:54:01"
         },
         {
             "name": "slim/slim",
-            "version": "2.4.0",
+            "version": "2.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/codeguy/Slim.git",
-                "reference": "ff7d7148848fa4f45712984d7b91ac3cbced586b"
+                "reference": "3a2ac723f17b5d81607287ff28575d38b9fbc70e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/codeguy/Slim/zipball/ff7d7148848fa4f45712984d7b91ac3cbced586b",
-                "reference": "ff7d7148848fa4f45712984d7b91ac3cbced586b",
+                "url": "https://api.github.com/repos/codeguy/Slim/zipball/3a2ac723f17b5d81607287ff28575d38b9fbc70e",
+                "reference": "3a2ac723f17b5d81607287ff28575d38b9fbc70e",
                 "shasum": ""
             },
             "require": {
@@ -280,7 +280,7 @@
                 "rest",
                 "router"
             ],
-            "time": "2013-11-29 20:33:36"
+            "time": "2014-02-16 18:18:25"
         },
         {
             "name": "symfony/class-loader",
