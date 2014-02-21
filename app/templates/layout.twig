@@ -6,6 +6,10 @@
         <title>Maya is the Bomb</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        {% block stylesheets %}
+        <link rel="stylesheet" href="{{ baseUrl() }}/stylesheets/normalize.css">
+        {% endblock %}
     </head>
     <body>
         {% block body %}
