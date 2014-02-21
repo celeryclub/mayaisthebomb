@@ -4,7 +4,9 @@
         "slim/slim": "2.*",
         "j4mie/paris": "1.4.*",
         "pimple/pimple": "2.0.*@dev",
-        "davedevelopment/phpmig": "1.1.*@dev"
+        "davedevelopment/phpmig": "1.1.*@dev",
+        "slim/views": "0.1.*",
+        "twig/twig": "1.15.*"
     },
     "config": {
         "bin-dir": "bin"
