@@ -1,9 +1,9 @@
 {% extends 'admin/layout.twig' %}
 
 {% block content %}
-<h1>{% if reason.is_new() %}Edit{% else %}New{% endif %} reason</h1>
+<h1>{% if reason.isSaved() %}Edit{% else %}New{% endif %} reason</h1>
 
-<form class="form-horizontal" role="form" action="{{ baseUrl() }}/admin/reasons{% if reason.id %}/{{ reason.id }}{% endif %}" method="post">
+<form class="form-horizontal" role="form" action="{{ baseUrl() }}/admin/reasons{% if reason.isSaved() %}/{{ reason.id }}{% endif %}" method="post">
     <div class="form-group">
         <label class="col-lg-2 control-label" for="number">Number</label>
         <div class="col-lg-10">
@@ -32,7 +32,7 @@
         </div>
     </div>
 
-    {% if reason.id %}<input type="hidden" name="_METHOD" value="put">{% endif %}
+    {% if reason.isSaved() %}<input type="hidden" name="_METHOD" value="put">{% endif %}
 
     <div class="form-group">
         <div class="col-lg-offset-2 col-lg-10">

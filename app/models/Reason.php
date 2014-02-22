@@ -1,9 +1,19 @@
 <?php
 
-class Reason extends Model {
-    public static $_table = 'reasons';
+use \Pheasant\Types;
 
-    public function update($attributes) {
-        $this->hydrate(array_merge($this->as_array(), $attributes));
+class Reason extends \Pheasant\DomainObject {
+    public function tableName() {
+      return 'reasons';
+    }
+
+    public function properties() {
+        return array(
+            'id'       => new Types\Integer(11, 'primary auto_increment'),
+            'number'   => new Types\Integer(11, 'required'),
+            'body'     => new Types\String(65534),
+            'footnote' => new Types\String(255),
+            'css'      => new Types\String(65534)
+        );
     }
 }
