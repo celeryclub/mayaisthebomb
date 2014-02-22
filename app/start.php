@@ -20,6 +20,9 @@ spl_autoload_register(function($class) {
     include __DIR__.'/models/'.$class.'.php';
 });
 
+// $migrator = new \Pheasant\Migrate\Migrator();
+// $migrator->create('reasons', Reason::schema());
+
 /*
     Routes/Controllers
 */

@@ -2,9 +2,7 @@
     "name": "stephendavis89/mayaisthebomb",
     "require": {
         "slim/slim": "2.*",
-        "j4mie/paris": "1.4.*",
-        "pimple/pimple": "2.0.*@dev",
-        "davedevelopment/phpmig": "1.1.*@dev",
+        "lox/pheasant": "1.2.*",
         "slim/views": "0.1.*",
         "twig/twig": "1.15.*"
     },

@@ -3,48 +3,37 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "0ae6603d419ed8bbab8dda1529764284",
+    "hash": "e76358b4b73722320432a94c2d4fa77d",
     "packages": [
         {
-            "name": "davedevelopment/phpmig",
-            "version": "dev-master",
+            "name": "lox/pheasant",
+            "version": "v1.2.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/davedevelopment/phpmig.git",
-                "reference": "8f5a5c1b746b6560e00edb90a9302e48fc437dd7"
+                "url": "https://github.com/lox/pheasant.git",
+                "reference": "29af79f4060e23a96d838c69519a1535ae922d0e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/davedevelopment/phpmig/zipball/8f5a5c1b746b6560e00edb90a9302e48fc437dd7",
-                "reference": "8f5a5c1b746b6560e00edb90a9302e48fc437dd7",
+                "url": "https://api.github.com/repos/lox/pheasant/zipball/29af79f4060e23a96d838c69519a1535ae922d0e",
+                "reference": "29af79f4060e23a96d838c69519a1535ae922d0e",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.2",
-                "symfony/class-loader": "2.*",
-                "symfony/config": "2.*",
-                "symfony/console": "2.*",
-                "symfony/yaml": "2.*"
+                "php": ">=5.3.2"
             },
             "require-dev": {
-                "mockery/mockery": "*@dev",
-                "phpunit/phpunit": "3.*"
+                "mockery/mockery": "~0.7.2",
+                "phpunit/phpunit": "~3.7.18",
+                "satooshi/php-coveralls": "dev-master"
             },
-            "suggest": {
-                "pimple/pimple": "Pimple allows to bootstrap phpmig really easily."
-            },
-            "bin": [
-                "bin/phpmig"
-            ],
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.1.x-dev"
-                }
-            },
             "autoload": {
                 "psr-0": {
-                    "Phpmig": "src/"
+                    "Pheasant": [
+                        "lib",
+                        "tests"
+                    ]
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -53,188 +42,23 @@
             ],
             "authors": [
                 {
-                    "name": "Dave Marshall",
-                    "email": "dave.marshall@atstsolutions.co.uk",
-                    "homepage": "http://davedevelopment.co.uk"
+                    "name": "Lachlan Donald",
+                    "email": "lachlan@ljd.cc"
                 },
                 {
-                    "name": "David Nielsen",
-                    "email": "david@panmedia.co.nz"
+                    "name": "Richard Bone",
+                    "email": "rjonbone@gmail.com"
                 }
             ],
-            "description": "Simple migrations system for php",
-            "homepage": "http://github.com/davedevelopment/phpmig",
+            "description": "A lightweight data mapper for MySQL and PHP 5.3+",
             "keywords": [
-                "database migrations",
-                "migrations"
+                "99designs",
+                "activerecord",
+                "datamapper",
+                "mysql",
+                "orm"
             ],
-            "time": "2014-01-31 21:47:33"
-        },
-        {
-            "name": "j4mie/idiorm",
-            "version": "v1.4.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/j4mie/idiorm.git",
-                "reference": "11e964157a6a2c6128a0546673ad5e99ac1a62cd"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/j4mie/idiorm/zipball/11e964157a6a2c6128a0546673ad5e99ac1a62cd",
-                "reference": "11e964157a6a2c6128a0546673ad5e99ac1a62cd",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.2.0"
-            },
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "idiorm.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-2-Clause",
-                "BSD-3-Clause",
-                "BSD-4-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Simon Holywell",
-                    "email": "treffynnon@php.net",
-                    "homepage": "http://simonholywell.com",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Jamie Matthews",
-                    "email": "jamie.matthews@gmail.com",
-                    "homepage": "http://j4mie.org/",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Durham Hale",
-                    "email": "me@durhamhale.com",
-                    "homepage": "http://durhamhale.com",
-                    "role": "Maintainer"
-                }
-            ],
-            "description": "A lightweight nearly-zero-configuration object-relational mapper and fluent query builder for PHP5",
-            "homepage": "http://j4mie.github.com/idiormandparis",
-            "keywords": [
-                "idiorm",
-                "orm",
-                "query builder"
-            ],
-            "time": "2013-12-12 10:25:27"
-        },
-        {
-            "name": "j4mie/paris",
-            "version": "v1.4.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/j4mie/paris.git",
-                "reference": "dd1a87544127874dce367f0252dcc81246dfc83b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/j4mie/paris/zipball/dd1a87544127874dce367f0252dcc81246dfc83b",
-                "reference": "dd1a87544127874dce367f0252dcc81246dfc83b",
-                "shasum": ""
-            },
-            "require": {
-                "j4mie/idiorm": "1.4.*",
-                "php": ">=5.2.0"
-            },
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "paris.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-2-Clause",
-                "BSD-3-Clause",
-                "BSD-4-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Simon Holywell",
-                    "email": "treffynnon@php.net",
-                    "homepage": "http://simonholywell.com",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Jamie Matthews",
-                    "email": "jamie.matthews@gmail.com",
-                    "homepage": "http://j4mie.org",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Durham Hale",
-                    "email": "me@durhamhale.com",
-                    "homepage": "http://durhamhale.com",
-                    "role": "Maintainer"
-                }
-            ],
-            "description": "A lightweight Active Record implementation for PHP5, built on top of Idiorm",
-            "homepage": "http://j4mie.github.com/idiormandparis",
-            "keywords": [
-                "Active Record",
-                "model",
-                "orm",
-                "paris"
-            ],
-            "time": "2013-12-12 10:47:44"
-        },
-        {
-            "name": "pimple/pimple",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/fabpot/Pimple.git",
-                "reference": "30651c5b19e1ec24e26d33c1600fc09ea3802f7a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Pimple/zipball/30651c5b19e1ec24e26d33c1600fc09ea3802f7a",
-                "reference": "30651c5b19e1ec24e26d33c1600fc09ea3802f7a",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Pimple": "lib/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org",
-                    "role": "Lead Developer"
-                }
-            ],
-            "description": "Pimple is a simple Dependency Injection Container for PHP 5.3",
-            "homepage": "http://pimple.sensiolabs.org",
-            "keywords": [
-                "container",
-                "dependency injection"
-            ],
-            "time": "2014-02-11 08:54:01"
+            "time": "2014-01-21 04:38:21"
         },
         {
             "name": "slim/slim",
@@ -337,261 +161,6 @@
             "time": "2013-12-08 10:18:35"
         },
         {
-            "name": "symfony/class-loader",
-            "version": "v2.4.2",
-            "target-dir": "Symfony/Component/ClassLoader",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/ClassLoader.git",
-                "reference": "d36352a610b33da398349807d63b8a792310ba7e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/ClassLoader/zipball/d36352a610b33da398349807d63b8a792310ba7e",
-                "reference": "d36352a610b33da398349807d63b8a792310ba7e",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3"
-            },
-            "require-dev": {
-                "symfony/finder": "~2.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.4-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Symfony\\Component\\ClassLoader\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org",
-                    "role": "Lead Developer"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony ClassLoader Component",
-            "homepage": "http://symfony.com",
-            "time": "2014-02-11 13:52:09"
-        },
-        {
-            "name": "symfony/config",
-            "version": "v2.4.2",
-            "target-dir": "Symfony/Component/Config",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/Config.git",
-                "reference": "d81bd01eac1514c10dcb3b11eaa9048d6b87dd1f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Config/zipball/d81bd01eac1514c10dcb3b11eaa9048d6b87dd1f",
-                "reference": "d81bd01eac1514c10dcb3b11eaa9048d6b87dd1f",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3",
-                "symfony/filesystem": "~2.3"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.4-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Symfony\\Component\\Config\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org",
-                    "role": "Lead Developer"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony Config Component",
-            "homepage": "http://symfony.com",
-            "time": "2014-01-07 13:28:54"
-        },
-        {
-            "name": "symfony/console",
-            "version": "v2.4.2",
-            "target-dir": "Symfony/Component/Console",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/Console.git",
-                "reference": "940f217cbc3c8a33e5403e7c595495c4884400fe"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/940f217cbc3c8a33e5403e7c595495c4884400fe",
-                "reference": "940f217cbc3c8a33e5403e7c595495c4884400fe",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3"
-            },
-            "require-dev": {
-                "symfony/event-dispatcher": "~2.1"
-            },
-            "suggest": {
-                "symfony/event-dispatcher": ""
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.4-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Symfony\\Component\\Console\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org",
-                    "role": "Lead Developer"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony Console Component",
-            "homepage": "http://symfony.com",
-            "time": "2014-02-11 13:52:09"
-        },
-        {
-            "name": "symfony/filesystem",
-            "version": "v2.4.2",
-            "target-dir": "Symfony/Component/Filesystem",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/Filesystem.git",
-                "reference": "7e65abb06d3b38f4be89266fe3fb4a759544e713"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/7e65abb06d3b38f4be89266fe3fb4a759544e713",
-                "reference": "7e65abb06d3b38f4be89266fe3fb4a759544e713",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.4-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Symfony\\Component\\Filesystem\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org",
-                    "role": "Lead Developer"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony Filesystem Component",
-            "homepage": "http://symfony.com",
-            "time": "2014-01-07 13:28:54"
-        },
-        {
-            "name": "symfony/yaml",
-            "version": "v2.4.2",
-            "target-dir": "Symfony/Component/Yaml",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/Yaml.git",
-                "reference": "bb6ddaf8956139d1b8c360b4b713ed0138e876b3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/bb6ddaf8956139d1b8c360b4b713ed0138e876b3",
-                "reference": "bb6ddaf8956139d1b8c360b4b713ed0138e876b3",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.4-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Symfony\\Component\\Yaml\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org",
-                    "role": "Lead Developer"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony Yaml Component",
-            "homepage": "http://symfony.com",
-            "time": "2014-01-07 13:28:54"
-        },
-        {
             "name": "twig/twig",
             "version": "v1.15.1",
             "source": {
@@ -656,10 +225,9 @@
 
     ],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "pimple/pimple": 20,
-        "davedevelopment/phpmig": 20
-    },
+    "stability-flags": [
+
+    ],
     "platform": [
 
     ],

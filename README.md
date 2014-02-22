@@ -31,8 +31,4 @@ bin/phpmig migrate
 
 ## Production setup
 
-Set up your server using the [PHD](https://github.com/stephendavis89/PHD) method. Inside `.htaccess`, use `SetEnv` to set the following database values:
-* `DB_HOST`
-* `DB_NAME`
-* `DB_USER`
-* `DB_PASS`
+Set up your server using the [PHD](https://github.com/stephendavis89/PHD) method. Inside `.htaccess`, use `SetEnv` to set the `DATABASE_URL` variable with the format `mysql://username:password@hostname/database`.
