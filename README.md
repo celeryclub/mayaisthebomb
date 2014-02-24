@@ -15,19 +15,21 @@ mysql -uroot -e "GRANT ALL PRIVILEGES ON mayaisthebomb . * TO 'mayaisthebomb'@'l
 
 ## Development server
 
-To start a development server from the project directory:
+To start a development server on port 9000 from the project directory:
 
 ```sh
-php -S localhost:9000 -t public/ server.php
+bin/phake server
 ```
 
-## Migrations
+## Schema
 
-To run database migrations from the project directory:
+To import database schema from the project directory:
 
 ```sh
-bin/phpmig migrate
+bin/phake schema
 ```
+
+**Note:** Importing database schema is destructive. All existing data will be lost
 
 ## Production setup
 

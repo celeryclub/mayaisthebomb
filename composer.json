@@ -6,6 +6,9 @@
         "slim/views": "0.1.*",
         "twig/twig": "1.15.*"
     },
+    "require-dev": {
+        "jaz303/phake": "dev-master"
+    },
     "config": {
         "bin-dir": "bin"
     },
