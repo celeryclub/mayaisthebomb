@@ -21,13 +21,15 @@ To start a development server on port 9000 from the project directory:
 bin/phake server
 ```
 
-## Migrations
+## Schema
 
-To run database migrations from the project directory:
+To import database schema from the project directory:
 
 ```sh
-bin/phpmig migrate
+bin/phake schema
 ```
+
+**Note:** Importing database schema is destructive. All existing data will be lost
 
 ## Production setup
 
