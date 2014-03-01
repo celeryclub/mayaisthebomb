@@ -1,7 +1,17 @@
 <?php
 
 /*
-    Create app
+    Configure environment
+*/
+@include __DIR__.'/../../environment.php';
+
+/*
+    Autoload dependencies
+*/
+require __DIR__.'/../vendor/autoload.php';
+
+/*
+    Instantiate app
 */
 $app = new \Slim\Slim(array(
     'view' => new \Slim\Views\Twig(),
@@ -14,14 +24,14 @@ $app = new \Slim\Slim(array(
 require __DIR__.'/../config/database.php';
 
 /*
-    Models
+    Register models
 */
 spl_autoload_register(function($class) {
     include __DIR__.'/../app/models/'.$class.'.php';
 });
 
 /*
-    Routes/Controllers
+    Load routes/controllers
 */
 require __DIR__.'/../app/routes/admin.php';
 require __DIR__.'/../app/routes/public.php';
