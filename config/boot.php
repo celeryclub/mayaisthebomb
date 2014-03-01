@@ -5,7 +5,7 @@
 */
 $app = new \Slim\Slim(array(
     'view' => new \Slim\Views\Twig(),
-    'templates.path' => __DIR__.'/templates'
+    'templates.path' => __DIR__.'/../app/templates'
 ));
 
 /*
@@ -17,14 +17,14 @@ require __DIR__.'/../config/database.php';
     Models
 */
 spl_autoload_register(function($class) {
-    include __DIR__.'/models/'.$class.'.php';
+    include __DIR__.'/../app/models/'.$class.'.php';
 });
 
 /*
     Routes/Controllers
 */
-require __DIR__.'/routes/admin.php';
-require __DIR__.'/routes/public.php';
+require __DIR__.'/../app/routes/admin.php';
+require __DIR__.'/../app/routes/public.php';
 
 /*
     Configure Twig views
