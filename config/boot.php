@@ -1,6 +1,11 @@
 <?php
 
 /*
+    Load path helpers
+*/
+require __DIR__.'/paths.php';
+
+/*
     Configure environment
 */
 @include __DIR__.'/../../environment.php';
@@ -15,26 +20,26 @@ require __DIR__.'/../vendor/autoload.php';
 */
 $app = new \Slim\Slim(array(
     'view' => new \Slim\Views\Twig(),
-    'templates.path' => __DIR__.'/../app/templates'
+    'templates.path' => appPath().'/templates'
 ));
 
 /*
     Connect to database
 */
-require __DIR__.'/../config/database.php';
+require configPath().'/database.php';
 
 /*
     Register models
 */
 spl_autoload_register(function($class) {
-    include __DIR__.'/../app/models/'.$class.'.php';
+    include appPath().'/models/'.$class.'.php';
 });
 
 /*
     Load routes/controllers
 */
-require __DIR__.'/../app/routes/admin.php';
-require __DIR__.'/../app/routes/public.php';
+require appPath().'/routes/admin.php';
+require appPath().'/routes/public.php';
 
 /*
     Configure Twig views
@@ -42,7 +47,7 @@ require __DIR__.'/../app/routes/public.php';
 $view = $app->view();
 $view->parserOptions = array(
     'debug' => true,
-    'cache' => __DIR__.'/cache'
+    'cache' => configPath().'/cache'
 );
 $view->parserExtensions = array(
     new \Slim\Views\TwigExtension()

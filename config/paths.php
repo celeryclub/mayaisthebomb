@@ -1,7 +1,9 @@
 <?php
 
-return array(
-    'app' => __DIR__,
-    'public' => __DIR__.'/../public',
-    'base' => __DIR__.'/..'
-);
+function configPath() {
+  return __DIR__;
+}
+
+function appPath() {
+  return __DIR__.'/../app';
+}
