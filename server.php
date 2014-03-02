@@ -1,15 +1,13 @@
 <?php
 
-$uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+$publicPath = __DIR__.'/public';
 
-$uri = urldecode($uri);
+$uri = urldecode(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
 
-$paths = require __DIR__.'/app/paths.php';
-
-$requested = $paths['public'].$uri;
+$requested = $publicPath.$uri;
 
 if ($uri !== '/' and file_exists($requested)) {
     return false;
 }
 
-require $paths['public'].'/index.php';
+require $publicPath.'/index.php';
