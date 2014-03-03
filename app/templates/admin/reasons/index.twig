@@ -21,7 +21,7 @@
         <td><a class="btn btn-sm btn-default" href="{{ baseUrl() }}/admin/reasons/{{ reason.id }}/edit">Edit</a></td>
         <td>
           <form class="form form-delete" action="{{ baseUrl() }}/admin/reasons/{{ reason.id }}" method="post">
-            <input type="hidden" name="_method" value="delete">
+            <input type="hidden" name="_METHOD" value="delete">
             <button class="btn btn-sm btn-danger">Delete</button>
           </form>
       </tr>

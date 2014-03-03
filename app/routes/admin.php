@@ -46,3 +46,12 @@ $app->put('/admin/reasons/:id', function($id) use($app) {
         $app->notFound();
     }
 });
+
+$app->delete('/admin/reasons/:id', function($id) use($app) {
+    if ($reason = Reason::byId($id)) {
+        $reason->delete();
+        $app->redirect('/admin/reasons');
+    } else {
+        $app->notFound();
+    }
+});
