@@ -4,8 +4,12 @@ require __DIR__.'/config/boot.php';
 
 task('schema', function() {
     echo "Importing database schema...\n";
-    $migrator = new \Pheasant\Migrate\Migrator();
-    $migrator->create('reasons', Reason::schema());
+    if (Reason::find()->count() == 0) {
+        $migrator = new \Pheasant\Migrate\Migrator();
+        $migrator->create('reasons', Reason::schema());
+    } else {
+        throw new Exception("Please remove all reasons before importing schema\n");
+    }
 });
 
 task('server', function() {
