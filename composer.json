@@ -1,21 +1,21 @@
 {
-    "name": "stephendavis89/mayaisthebomb",
-    "require": {
-        "slim/slim": "2.*",
-        "lox/pheasant": "1.2.*",
-        "slim/views": "0.1.*",
-        "twig/twig": "1.15.*"
-    },
-    "require-dev": {
-        "jaz303/phake": "dev-master"
-    },
-    "config": {
-        "bin-dir": "bin"
-    },
-    "authors": [
-        {
-            "name": "Stephen Davis",
-            "email": "stephendavis89@gmail.com"
-        }
-    ]
+  "name": "stephendavis89/mayaisthebomb",
+  "require": {
+    "slim/slim": "2.*",
+    "lox/pheasant": "1.2.*",
+    "slim/views": "0.1.*",
+    "twig/twig": "1.15.*"
+  },
+  "require-dev": {
+    "jaz303/phake": "dev-master"
+  },
+  "config": {
+    "bin-dir": "bin"
+  },
+  "authors": [
+    {
+      "name": "Stephen Davis",
+      "email": "stephendavis89@gmail.com"
+    }
+  ]
 }

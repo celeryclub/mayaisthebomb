@@ -1,5 +1,5 @@
 <?php
 
 $app->get('/', function() use($app) {
-    return $app->render('index.twig');
+  return $app->render('index.twig');
 });
