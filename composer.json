@@ -1,7 +1,7 @@
 {
   "name": "stephendavis89/mayaisthebomb",
   "require": {
-    "slim/slim": "2.*",
+    "slim/slim": "2.4.*",
     "lox/pheasant": "1.2.*",
     "slim/views": "0.1.*",
     "twig/twig": "1.15.*"

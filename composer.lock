@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "ca997be83b5089dd5378d1fe3a98a57d",
+    "hash": "3e1f0e4e4856757e2b4dbcef24f5c0b3",
     "packages": [
         {
             "name": "lox/pheasant",
@@ -62,16 +62,16 @@
         },
         {
             "name": "slim/slim",
-            "version": "2.4.2",
+            "version": "2.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/codeguy/Slim.git",
-                "reference": "3a2ac723f17b5d81607287ff28575d38b9fbc70e"
+                "reference": "4906b77a07c7bd6ff1a99aea903e940a2d4fa106"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/codeguy/Slim/zipball/3a2ac723f17b5d81607287ff28575d38b9fbc70e",
-                "reference": "3a2ac723f17b5d81607287ff28575d38b9fbc70e",
+                "url": "https://api.github.com/repos/codeguy/Slim/zipball/4906b77a07c7bd6ff1a99aea903e940a2d4fa106",
+                "reference": "4906b77a07c7bd6ff1a99aea903e940a2d4fa106",
                 "shasum": ""
             },
             "require": {
@@ -104,21 +104,21 @@
                 "rest",
                 "router"
             ],
-            "time": "2014-02-16 18:18:25"
+            "time": "2014-04-05 18:33:59"
         },
         {
             "name": "slim/views",
-            "version": "0.1.1",
+            "version": "0.1.2",
             "target-dir": "Slim/Views",
             "source": {
                 "type": "git",
                 "url": "https://github.com/codeguy/Slim-Views.git",
-                "reference": "8c7e0f3067e5e10b7b4ca98f29bdef8d5cfe5371"
+                "reference": "f0a05ea0b654218e40de692ed7cddcad1cf4b828"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/codeguy/Slim-Views/zipball/8c7e0f3067e5e10b7b4ca98f29bdef8d5cfe5371",
-                "reference": "8c7e0f3067e5e10b7b4ca98f29bdef8d5cfe5371",
+                "url": "https://api.github.com/repos/codeguy/Slim-Views/zipball/f0a05ea0b654218e40de692ed7cddcad1cf4b828",
+                "reference": "f0a05ea0b654218e40de692ed7cddcad1cf4b828",
                 "shasum": ""
             },
             "require": {
@@ -158,7 +158,7 @@
                 "slimphp",
                 "templating"
             ],
-            "time": "2013-12-08 10:18:35"
+            "time": "2014-04-03 16:31:10"
         },
         {
             "name": "twig/twig",
@@ -225,12 +225,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/jaz303/phake.git",
-                "reference": "d0ab677620ca9a2f85a5b220338ccd63bb61a91e"
+                "reference": "2401140dae7311e89a93a64e69478f85716db6a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jaz303/phake/zipball/d0ab677620ca9a2f85a5b220338ccd63bb61a91e",
-                "reference": "d0ab677620ca9a2f85a5b220338ccd63bb61a91e",
+                "url": "https://api.github.com/repos/jaz303/phake/zipball/2401140dae7311e89a93a64e69478f85716db6a0",
+                "reference": "2401140dae7311e89a93a64e69478f85716db6a0",
                 "shasum": ""
             },
             "require": {
@@ -262,20 +262,14 @@
                 "automation",
                 "cli"
             ],
-            "time": "2014-02-13 10:45:55"
+            "time": "2014-04-20 00:44:47"
         }
     ],
-    "aliases": [
-
-    ],
+    "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
         "jaz303/phake": 20
     },
-    "platform": [
-
-    ],
-    "platform-dev": [
-
-    ]
+    "platform": [],
+    "platform-dev": []
 }
