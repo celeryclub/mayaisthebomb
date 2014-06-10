@@ -1,0 +1,170 @@
+html { -webkit-font-smoothing: antialiased; }
+
+body {
+  background-color: #f5ecd9;
+  color: #3b3b3b;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+a {
+  color: #11a7db;
+}
+
+ul {
+  list-style: square;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+header,
+main,
+footer {
+  margin: 0 1em;
+}
+
+header,
+footer {
+  text-align: center;
+}
+
+section {
+  margin-top: 4em;
+}
+
+.section-preamble,
+.section-title {
+  text-align: center;
+}
+
+.section-preamble {
+  color: #a5a5a5;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.section-preamble:before,
+.section-preamble:after {
+  border-bottom: 3px double #a5a5a5;
+  content: '';
+  display: inline-block;
+  margin: 0 .5em;
+  position: relative;
+  top: -.25em;
+  width: 2em;
+}
+
+.section-title {
+  margin-top: 0;
+}
+
+/*.reasons {}*/
+
+.reasons-slideshow {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.reason {
+  background-color: #93cc76;
+  color: #fff;
+  max-width: 100%;
+  padding-bottom: 1em;
+  width: 600px;
+}
+
+.reason-title,
+.reason-body,
+.reason-footnote {
+  padding: 0 2em;
+}
+
+.reason-title {
+  color: #5b7e49;
+}
+
+.reason-footnote {
+  font-style: italic;
+  font-size: .75em;
+  text-align: right;
+}
+
+.cycle-prev,
+.cycle-next {
+  background-color: #fff;
+  border: 1px solid #11a7db;
+  border-radius: 15px;
+  font-size: 1.2em;
+  height: 30px;
+  line-height: 31px;
+  margin-top: -15px;
+  padding: 0 5px;
+  position: absolute;
+  text-decoration: none;
+  top: 50%;
+  -webkit-transition: background-color 325ms linear;
+          transition: background-color 325ms linear;
+  width: 20px;
+  z-index: 1000;
+}
+
+.cycle-prev:hover,
+.cycle-next:hover {
+  background-color: #e5f6fc;
+}
+
+.cycle-prev {
+  left: -15px;
+}
+
+.cycle-next {
+  right: -15px;
+  text-align: right;
+}
+
+.favorites ul {
+  font-size: 1.2em;
+}
+
+.things .iframe-wrapper {
+  border: 1px solid #a5a5a5;
+  border-style: double solid;
+}
+
+.things iframe {
+  border: none;
+  display: block;
+  min-height: 500px;
+  width: 100%;
+}
+
+footer {
+  font-size: .8em;
+  margin-top: 2em;
+}
+
+@media screen and (min-width: 768px) {
+  .favorites ul {
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+        -ms-column-count: 2;
+            column-count: 2;
+    -webkit-column-gap: 1em;
+       -moz-column-gap: 1em;
+        -ms-column-gap: 1em;
+            column-gap: 1em;
+    list-style-position: inside;
+  }
+}
