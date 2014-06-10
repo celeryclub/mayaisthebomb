@@ -1,5 +1,56 @@
 {% extends 'layout.twig' %}
 
 {% block content %}
-<p>This is the homepage.</p>
+<header>
+  <h1 class="page-title">Maya Davis</h1>
+</header>
+
+<main>
+  <section class="reasons">
+    <p class="section-preamble">Let's explore the</p>
+    <h2 class="section-title">Reasons Why Maya is the Bomb</h2>
+    <div class="reasons-slideshow cycle-slideshow"
+      data-cycle-auto-height="calc"
+      data-cycle-slides=">.reason"
+      data-cycle-timeout="0">
+    {% for reason in reasons %}
+      <div class="reason">
+        <h3 class="reason-title">Number {{ reason.number }}:</h3>
+        <p class="reason-body">{{ reason.body }}</p>
+        {% if reason.footnote %}
+        <p class="reason-footnote">{{ reason.footnote }}</p>
+        {% endif %}
+      </div>
+    {% endfor %}
+
+    <a href="#" class="cycle-prev">&larr;</a>
+    <a href="#" class="cycle-next">&rarr;</a>
+    </div>
+  </section>
+
+  <section class="favorites">
+    <p class="section-preamble">In case you're wondering, here are some of</p>
+    <h2 class="section-title">Maya's Favorite Things</h2>
+    <ul>
+      <li>Quiet mornings at the house</li>
+      <li>Running and working out</li>
+      <li>A good conversation with a friend</li>
+      <li>Drinking delicious coffee</li>
+      <li>Eating artisan chocolate</li>
+      <li>Traveling and exploring new places</li>
+    </ul>
+  </section>
+
+  <section class="things">
+    <p class="section-preamble">Finally, here's a list of incredible</p>
+    <h2 class="section-title">Things to Do With Maya</h2>
+    <div class="iframe-wrapper">
+      <iframe src="https://docs.google.com/document/d/1loNDcxB_x3ekwnEAeKOei0_8DoTctkECBiK9KzIvOCc/pub?embedded=true"></iframe>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; {{ 'now'|date('Y') }} <a href="http://www.stephendavis.im/">Stephen Davis</a>. Thanks for reading.</p>
+</footer>
 {% endblock %}

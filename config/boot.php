@@ -19,8 +19,8 @@ require __DIR__.'/../vendor/autoload.php';
     Instantiate app
 */
 $app = new \Slim\Slim(array(
-    'view' => new \Slim\Views\Twig(),
-    'templates.path' => appPath().'/templates'
+  'view' => new \Slim\Views\Twig(),
+  'templates.path' => appPath().'/templates'
 ));
 
 /*
@@ -32,7 +32,7 @@ require configPath().'/database.php';
     Register models
 */
 spl_autoload_register(function($class) {
-    include appPath().'/models/'.$class.'.php';
+  include appPath().'/models/'.$class.'.php';
 });
 
 /*
@@ -46,11 +46,11 @@ require appPath().'/routes/public.php';
 */
 $view = $app->view();
 $view->parserOptions = array(
-    'debug' => true,
-    'cache' => configPath().'/cache'
+  'debug' => true,
+  'cache' => configPath().'/cache'
 );
 $view->parserExtensions = array(
-    new \Slim\Views\TwigExtension()
+  new \Slim\Views\TwigExtension()
 );
 
 return $app;
