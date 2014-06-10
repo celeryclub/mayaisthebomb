@@ -6,7 +6,7 @@ $app->get('/admin', function() use($app) {
 
 $app->get('/admin/reasons', function() use($app) {
   return $app->render('admin/reasons/index.twig', array(
-    'reasons' => Reason::find()
+    'reasons' => Reason::find()->order('number')
   ));
 });
 
