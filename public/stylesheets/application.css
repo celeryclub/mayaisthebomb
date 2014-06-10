@@ -114,8 +114,8 @@ section {
   position: absolute;
   text-decoration: none;
   top: 50%;
-  -webkit-transition: background-color 325ms linear;
-          transition: background-color 325ms linear;
+  -webkit-transition: all 325ms linear;
+          transition: all 325ms linear;
   width: 20px;
   z-index: 1000;
 }
@@ -123,6 +123,11 @@ section {
 .cycle-prev:hover,
 .cycle-next:hover {
   background-color: #e5f6fc;
+}
+
+.cycle-prev.disabled,
+.cycle-next.disabled {
+  opacity: 0;
 }
 
 .cycle-prev {
