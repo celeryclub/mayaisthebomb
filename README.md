@@ -29,7 +29,7 @@ To import database schema from the project directory:
 bin/phake schema
 ```
 
-**Note:** Importing database schema is destructive. All existing data will be lost
+**Note:** Importing database schema is destructive. All existing data will be lost.
 
 ## Production setup
 
